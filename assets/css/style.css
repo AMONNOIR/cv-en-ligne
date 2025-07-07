@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --color1: rgb(23, 171, 179);
+    --color2: rgb(51, 51, 51);
+    --color3: rgb(227, 227, 227);
+    --color4: rgb(245, 245, 245);
+    --color5: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+body {
+    background: var(--color4);
+}
+
+.cv {
+    width: 1160px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h3 {
+   color: var(--color1);
+   font-weight: 400;
+   padding: 15px 0;
+   font-size: 1.5rem;
+}
+
+header {
+    width: 100%;
+    background: var(--color1);
+    padding: 0;
+}
+
+header .informations {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 180px;
+    padding: 50px 0;
+}
+
+header .photo {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+    border: 4px solid var(--color5);
+}
+
+.photo img {
+    transition: transform 0.3s;
+    cursor: zoom-in;
+}
+
+.photo img:hover {
+    transform: scale(1.08);
+}
+
+header .info {
+    width: 70%;
+    color: var(--color5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.infos-contact {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px 24px;
+    padding: 0;
+}
+
+.infos-contact li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 100;
+}
+
+.infos-contact a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.infos-contact .icon {
+    width: 25px;
+    height: 25px;
+}
+
+.divers {
+    width: 30%;
+    background-color: var(--color3);
+    padding: 50px;
+}
+
+.parcours {
+    width: 70%;
+    background-color: var(--color5);
+    padding: 50px;
+}
+
+.competences {
+    display: flex;
+    margin-top: 15px;
+}
+
+.competences ul {
+    list-style: none;
+    padding: 0;
+}
+
+.competences li {
+    font-weight: bold;
+}
+
+.competences-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.competences-container li {
+    margin: 5px 0;
+}
+
+.competences-stars {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--color1);
+}
+
+.langues ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.langues li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.langue {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.qualites li, .interet li {
+    list-style-type: square;
+}
+
+.qualites li::marker,
+.interet li::marker {
+    color: var(--color1);
+    font-size: 1.2em;
+}
+
+.profil p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.formation-item,
+.stages-item,
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.formation-item .top-row,
+.stages-item .top-row,
+.experience-item .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.formation-item .formation,
+.stages-item .poste,
+.experience-item .poste {
+    font-weight: bold;
+    font-size: 1.05em;
+    text-align: left;
+}
+
+.formation-item .date,
+.stages-item .date,
+.experience-item .date {
+    font-weight: normal;
+    color: var(--color1);
+    font-size: 1em;
+    text-align: right;
+}
+
+.formation-item .lieu,
+.stages-item .societe,
+.experience-item .societe {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 2px;
+    font-size: 0.95em;
+    color: var(--color2);
+    font-style: italic;
+}
+
+.formation-item,
+.stages-item,
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+    transition: background 0.3s; 
+    padding-left: 18px;
+}
+
+
+.formation-item .top-row,
+.stages-item .top-row,
+.experience-item .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.formation-item .formation,
+.stages-item .poste,
+.experience-item .poste {
+    font-weight: bold;
+    font-size: 1.05em;
+    text-align: left;
+}
+
+.formation-item .date,
+.stages-item .date,
+.experience-item .date {
+    font-weight: normal;
+    color: var(--color1);
+    font-size: 1em;
+    text-align: right;
+}
+
+.formation-item .lieu,
+.stages-item .societe,
+.experience-item .societe {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 2px;
+    font-size: 0.95em;
+    color: var(--color2);
+    font-style: italic;
+}
+
+.formation-item::before,
+.stages-item::before,
+.experience-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: var(--color1); 
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+.formation-item:hover,
+.stages-item:hover,
+.experience-item:hover {
+    background: var(--color3);
+}
+
+.formation-item:hover::before,
+.stages-item:hover::before,
+.experience-item:hover::before {
+    opacity: 1;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--color4);
+    padding-bottom: 15px;
+}
+
+footer {
+    width: 100%;
+    background: var(--color1);
+    color: var(--color5);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+footer small {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--color5);
+    opacity: 0.85;
+    font-style: italic;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.footer-icons img:hover {
+    opacity: 0.7;
+    transform: scale(1.09);
+}

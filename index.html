@@ -4,155 +4,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV en ligne</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
-        <section class="informations">
-            <div class="photo">
-                <img src="./assets/img/photo-profil.png" alt="photo-profil">
+    <section class="cv">
+
+        <header>
+            <section class="informations">
+                <div class="photo">
+                    <a href="./assets/img/photo-profil.jpeg" target="_blank">
+                      <img src="./assets/img/photo-profil.jpeg" alt="photo-profil">
+                    </a>
+                  </div>
+                <div class="info">
+                    <h1>Alexandre Monnoir</h1>
+                    <h2>Développeur Web et Web Mobile</h2>
+                    <ul class="infos-contact">
+                        <li>
+                            <a href="mailto:mail@email.com">
+                                <img src="./assets/img/mail.png" alt="Mail" class="icon"/>
+                                Mail
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/@19.9235584,99.8424213,3a,75y,257.94h,87.69t/data=!3m7!1e1!3m5!1swmfFCQSQy_8uZJ04aDlAYg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D2.310875049284732%26panoid%3DwmfFCQSQy_8uZJ04aDlAYg%26yaw%3D257.9393624584629!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <img src="./assets/img/adress.png" alt="Adresse" class="icon"/>
+                                Adresse
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:0612345678">
+                                <img src="./assets/img/mobile.png" alt="Téléphone" class="icon"/>
+                                Téléphone
+                            </a>
+                        </li>
+                        <li>
+                            <img src="./assets/img/voiture.png" alt="Permis B" class="icon"/>
+                            Permis B
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="divers">
+                <h3>Compétences</h3>
+                <hr>
+                <div class="competences">
+                    <div class="competences-container">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                    <div class="competences-stars">
+                        <ul>
+                            <li>★★★★☆</li>
+                            <li>★★★★☆</li>
+                            <li>★★☆☆☆</li>
+                            <li>★☆☆☆☆</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="langues">
+                    <h3>Langues</h3>
+                    <hr>
+                    <ul>
+                        <li>
+                            <span class="langue">Français</span>
+                            <span class="niveau">Langue maternelle</span>
+                        </li>
+                        <li>
+                            <span class="langue">Anglais</span>
+                            <span class="niveau">Professionnel</span>
+                        </li>
+                        <li>
+                            <span class="langue">Thaïlandais</span>
+                            <span class="niveau">Notions</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="qualites">
+                    <h3>Qualités</h3>
+                    <hr>
+                    <ul>
+                        <li>Esprit d'équipe</li>
+                        <li>Autonomie</li>
+                        <li>Organisation</li>
+                        <li>Rigoureux</li>
+                    </ul>
+                </div>
+                <div class="interet">
+                    <h3>Centres d'intérêt</h3>
+                    <hr>
+                    <ul>
+                        <li>Golf</li>
+                        <li>Tennis</li>
+                        <li>Voyage</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="parcours">
+                <div class="profil">
+                    <h3>Profil</h3>
+                    <hr>
+                    <p>
+                        Passionné par le développement web, je suis en reconversion professionnelle avec une formation solide en HTML, CSS et JavaScript. Rigoureux, autonome et curieux, je cherche à intégrer une équipe dynamique où je pourrai mettre en pratique mes compétences techniques tout en continuant à apprendre.  
+                        Doté d'un très bon esprit d'équipe et d'une forte capacité d'adaptation, je suis motivé par la création de sites web performants et ergonomiques, avec un souci constant de qualité et d'expérience utilisateur.
+                    </p>
+                </div>
+                <div class="formations">
+                    <h3>Formations</h3>
+                    <hr>
+                    <div class="formation-item">
+                        <div class="top-row">
+                            <span class="formation">Titre Professionnel DWWM</span>
+                            <span class="date">2025 - En cours</span>
+                        </div>
+                        <span class="lieu"><small>Centre Européen de Formation</small></span>
+                    </div>
+                    <div class="formation-item">
+                        <div class="top-row">
+                            <span class="formation">Baccalaureat Professionnel Vente</span>
+                            <span class="date">2015</span>
+                        </div>
+                        <span class="lieu"><small>Lycée Francisque Sarcey DOURDAN 91</small></span>
+                    </div>
+                </div>
+                <div class="stages">
+                    <h3>Stages</h3>
+                    <hr>
+                    <div class="stages-item">
+                        <div class="top-row">
+                            <span class="poste">Agent immobilier</span>
+                            <span class="date">2013</span>
+                        </div>
+                        <span class="societe"><small>Cap immo - DOURDAN 91</small></span>
+                    </div>
+                    <div class="stages-item">
+                        <div class="top-row">
+                            <span class="poste">Vendeur</span>
+                            <span class="date">2012</span>
+                        </div>
+                        <span class="societe"><small>Bijouterie - DOURDAN 91</small></span>
+                    </div>
+                    <div class="stages-item">
+                        <div class="top-row">
+                            <span class="poste">Vendeur</span>
+                            <span class="date">2011</span>
+                        </div>
+                        <span class="societe"><small>Optic 2000 - DOURDAN 91</small></span>
+                    </div>
+                </div>
+                
+                <div class="experience-professionnelle">
+                    <h3>Expérience Professionnelle</h3>
+                    <hr>
+                    <div class="experience-item">
+                        <div class="top-row">
+                            <span class="poste">VRP</span>
+                            <span class="date">2023/2024</span>
+                        </div>
+                        <span class="societe"><small>Wurth - Mérignac 33</small></span>
+                    </div>
+                    <div class="experience-item">
+                        <div class="top-row">
+                            <span class="poste">VRP</span>
+                            <span class="date">06/2023-07/2023</span>
+                        </div>
+                        <span class="societe"><small>Thévenin - Bordeaux 33</small></span>
+                    </div>
+                    <div class="experience-item">
+                        <div class="top-row">
+                            <span class="poste">Expatriation</span>
+                            <span class="date">2021/2023</span>
+                        </div>
+                        <span class="societe"><small>Expatriation - Thailande</small></span>
+                    </div>
+                    <div class="experience-item">
+                        <div class="top-row">
+                            <span class="poste">VRP</span>
+                            <span class="date">2020/2021</span>
+                        </div>
+                        <span class="societe"><small>Thiriet - Libourne 33</small></span>
+                    </div>
+                    <div class="experience-item">
+                        <div class="top-row">
+                            <span class="poste">VRP</span>
+                            <span class="date">2017/2019</span>
+                        </div>
+                        <span class="societe"><small>Maximo - Etampes 91</small></span>
+                    </div>
+                    <div class="experience-item">
+                        <div class="top-row">
+                            <span class="poste">VRP</span>
+                            <span class="date">2015/2017</span>
+                        </div>
+                        <span class="societe"><small>Alis Baan Jam - Thailande</small></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/alexandre-monnoir-b27a7221b" target="_blank">
+                    <img src="./assets/img/linkedin.png" alt="linkedin"/>
+                </a>
+                <a href="https://github.com/AMONNOIR" target="_blank">
+                    <img src="./assets/img/github.png" alt="Github"/>
+                </a>
             </div>
-            <div class="info">
-                <h1>Alexandre Monnoir</h1>
-                <h2>Développeur Web et Web Mobile</h2>
-                <ul>
-                    <li>Mail</li>
-                    <li>Adresse</li>
-                    <li>Téléphone</li>
-                    <li>Permis B</li>
-                </ul>
-            </div>
-        </section>
-    </header>
-    <main>
-        <section class="divers">
-            <div class="competences">
-                <h2>Compétences</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>PHP</li>
-                </ul>
-            </div>
-            <div class="langues">
-                <h2>Langues</h2>
-                <ul>
-                    <li>
-                      <span class="langue">Français</span>
-                      <span class="niveau">Langue maternelle</span>
-                    </li>
-                    <li>
-                      <span class="langue">Anglais</span>
-                      <span class="niveau">Professionnel</span>
-                    </li>
-                    <li>
-                      <span class="langue">Thaïlandais</span>
-                      <span class="niveau">Notions</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="qualites">
-                <h2>Qualités</h2>
-                <ul>
-                    <li>Esprit d'équipe</li>
-                    <li>Autonomie</li>
-                    <li>Organisation</li>
-                    <li>Rigoureux</li>
-                </ul>
-            </div>
-            <div class="interet">
-                <h2>Centres d'intérêt</h2>
-                <ul>
-                    <li>Yoga</li>
-                    <li>Tennis</li>
-                    <li>Ecologie</li>
-                </ul>
-            </div>
-        </section>
-        <section class="parcours">
-            <div class="profil">
-                <h2>Profil</h2>
-                <p>
-                    Passionné par le développement web, je suis en reconversion professionnelle avec une formation solide en HTML, CSS et JavaScript. Rigoureux, autonome et curieux, je cherche à intégrer une équipe dynamique où je pourrai mettre en pratique mes compétences techniques tout en continuant à apprendre.  
-                    Doté d'un très bon esprit d'équipe et d'une forte capacité d'adaptation, je suis motivé par la création de sites web performants et ergonomiques, avec un souci constant de qualité et d'expérience utilisateur.
-                </p>
-            </div>
-            <div class="formations">
-                <h2>Formations</h2>
-                <div class="formation-item">
-                    <span class="formation">Titre Professionnel DWWM</span>
-                    <span class="lieu"><small>Centre Européen de Formation</small></span>
-                    <span class="date">2025 - En cours</span>
-                </div>
-                <div class="formation-item">
-                    <span class="formation">Baccalaureat Professionnel Vente</span>
-                    <span class="lieu"><small>Lycée Francisque Sarcey DOURDAN 91</small></span>
-                    <span class="date">2015</span>
-                </div>
-            </div>
-            <div class="stages">
-                <h2>Stages</h2>
-                <div class="stages-item">
-                    <span class="poste">Agent immobillier</span>
-                    <span class="societe"><small>Cap immo - DOURDAN 91</small></span>
-                    <span class="date">2013</span>
-                </div>
-                <div class="stages-item">
-                    <span class="poste">Vendeur</span>
-                    <span class="societe"><small>Bijouterie - DOURDAN 91</small></span>
-                    <span class="date">2012</span>
-                </div>
-                <div class="stages-item">
-                    <span class="poste">Vendeur</span>
-                    <span class="societe"><small>Optic 2000 - DOURDAN 91</small></span>
-                    <span class="date">2011</span>
-                </div>
-            </div>
-            <div class="experience-professionnelle">
-                <h2>Expérience Professionnelle</h2>
-                <div class="experience-item">
-                    <span class="poste">VRP</span>
-                    <span class="societe"><small>Wurth - Mérignac 33</small></span>
-                    <span class="date">2023/2024</span>
-                </div>
-                <div class="experience-item">
-                    <span class="poste">VRP</span>
-                    <span class="societe"><small>Thévenin - Bordeaux 33</small></span>
-                    <span class="date">06/2023-07/2023</span>
-                </div>
-                <div class="experience-item">
-                    <span class="poste">Expatriation</span>
-                    <span class="societe"><small>Expatriation - Thailande</small></span>
-                    <span class="date">2021/2023</span>
-                </div>
-                <div class="experience-item">
-                    <span class="poste">VRP</span>
-                    <span class="societe"><small>Thiriet - libourne 33</small></span>
-                    <span class="date">2020/2021</span>
-                </div>
-                <div class="experience-item">
-                    <span class="poste">VRP</span>
-                    <span class="societe"><small>Maximo - Etampes 91</small></span>
-                    <span class="date">2017/2019</span>
-                </div>
-                <div class="experience-item">
-                    <span class="poste">VRP</span>
-                    <span class="societe"><small>Alis Baan Jam - Thailande</small></span>
-                    <span class="date">2015/2017</span>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-icons">
-          <a href="https://www.linkedin.com/in/alexandre-monnoir-b27a7221b" target="_blank">
-            <img src="./assets/img/linkedin.png" alt="linkedin" />
-          </a>
-          <a href="https://github.com/AMONNOIR" target="_blank" >
-            <img src="./assets/img/github.png" alt="Github" />
-          </a>
-        </div>
-        <small>Mis à jour le : 03/07/2025</small>
-      </footer>
-</body>
-</html>
+            <small>Mis à jour le : 05/07/2025</small>
+        </footer>
+    </section>
+    </body>
+    </html>
